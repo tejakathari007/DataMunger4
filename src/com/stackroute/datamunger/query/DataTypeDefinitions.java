@@ -5,9 +5,16 @@ public class DataTypeDefinitions {
 
 	/*
 	 * this class should contain a member variable which is a String array, to hold
-	 * the data type for all columns for all data types
+	 * the data type for all columns for all data types and should override toString() method as well.
 	 */	
 	public String[] getDataTypes() {
 		return null;
+	}
+
+	@java.lang.Override
+	public java.lang.String toString() {
+		return "DataTypeDefinitions{" +
+				"dataTypes=" + java.util.Arrays.toString(dataTypes) +
+				'}';
 	}
 }

@@ -34,7 +34,7 @@ public class DataMungerTest {
 		display("successRetrieveHeaderTestCase", Arrays.toString(result.getHeaders()));
 	}
 
-	@SuppressWarnings("deprecation")
+
 	@Test
 	public void testRetrieveHeaderFailure() throws IOException {
 		Header result = reader.getHeader();
@@ -57,7 +57,6 @@ public class DataMungerTest {
 		display("successRetrieveDataTypesTestCase", Arrays.toString(result.getDataTypes()));
 	}
 
-	@SuppressWarnings("deprecation")
 	@Test
 	public void testRetrieveDataTypesFailure() throws IOException {
 		DataTypeDefinitions result = reader.getColumnType();
@@ -71,7 +70,6 @@ public class DataMungerTest {
 	@Test(expected = FileNotFoundException.class)
 	public void testFileNotFound() throws IOException {
 		reader = new CsvQueryProcessor("data/ipl2.csv");
-		Header result = reader.getHeader();
 
 	}
 
