@@ -10,10 +10,5 @@ public class Header {
 	public String[] getHeaders() {
 		return null;
 	}
-@java.lang.Override
-	public java.lang.String toString() {
-		return "Header{" +
-				"headers=" + java.util.Arrays.toString(headers) +
-				'}';
-	}
+
 }

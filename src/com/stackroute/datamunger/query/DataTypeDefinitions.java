@@ -11,10 +11,5 @@ public class DataTypeDefinitions {
 		return null;
 	}
 
-	@java.lang.Override
-	public java.lang.String toString() {
-		return "DataTypeDefinitions{" +
-				"dataTypes=" + java.util.Arrays.toString(dataTypes) +
-				'}';
-	}
+	
 }
